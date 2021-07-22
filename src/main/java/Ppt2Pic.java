@@ -23,6 +23,7 @@ import java.io.InputStreamReader;
  * author: milowoo
  * wuchat: wucg1107
  * email: 89059049@qq.com
+ * function：支持PPT / PPTX 转 图片 工具
  */
 public final class Ppt2Pic {
     //先将ppt转pdf 再将pdf转图片
