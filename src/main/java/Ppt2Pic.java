@@ -25,9 +25,9 @@ import java.io.InputStreamReader;
  * email: 89059049@qq.com
  */
 public final class Ppt2Pic {
-    //现将ppt转pdf 在将pdf转图片
+    //先将ppt转pdf 再将pdf转图片
     private static String pptName = "a1aa1b13f32a1c6fb2f6474941212573ad27e9e2.pptx";
-    private static  String  pptPath = "/Users/wuchuangeng/Downloads/";
+    private static  String  pptPath = "/Users/xxx/Downloads/";
     private  static String tmpPath = "/Users/xxx/test/";
     private  static String desPath = "/Users/xxx/test/output/";
     private  static String softDir = "/Applications/LibreOffice.app/Contents/MacOS/";
