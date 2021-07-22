@@ -23,27 +23,27 @@ import java.io.InputStreamReader;
  * author: milowoo
  * wuchat: wucg1107
  * email: 89059049@qq.com
- * function：支持PPT / PPTX 转 图片 工具
+ * function：支持 ppt,pptx 转图片
  */
 public final class Ppt2Pic {
     //先将ppt转pdf 再将pdf转图片
     private static String pptName = "a1aa1b13f32a1c6fb2f6474941212573ad27e9e2.pptx";
     private static  String  pptPath = "/Users/xxx/Downloads/";
-    private  static String tmpPath = "/Users/xxx/test/";
+    private  static String pdfPath = "/Users/xxx/test/";
     private  static String desPath = "/Users/xxx/test/output/";
     private  static String softDir = "/Applications/LibreOffice.app/Contents/MacOS/";
 
 
     public static void main(String[] args) throws Exception {
         String fullName = pptPath + pptName;
-        String cmd = softDir + "soffice --headless --convert-to pdf " + fullName + " --outdir " + tmpPath;
+        String cmd = softDir + "soffice --headless --convert-to pdf " + fullName + " --outdir " + pdfPath;
 
         long start = System.currentTimeMillis();
         String result = execCmd(cmd, null);
         System.out.println(result);
 
         String preName = getPrefixName(pptName);
-        String srcPath = tmpPath + preName + ".pdf";
+        String srcPath = pdfPath + preName + ".pdf";
         pdf2png(srcPath);
         long end = System.currentTimeMillis();
 
