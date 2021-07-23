@@ -7,7 +7,7 @@ LibreOffice 安装：
 ubuntu
 sudo apt-get install libreoffice
 Mac
-https://zh-cn.libreoffice.org/get-help/install-howto/ 下载 安装包，自行安装
+https://www.libreoffice.org/donate/dl/mac-x86_64/7.0.6/zh-TW/LibreOffice_7.0.6_MacOS_x86-64.dmg  下载 安装包，自行安装
 
 安装后的路径
 Mac
